@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="lead">ANGULAR!</h1>
+    </div>
+
+    <!--two ways to include modular html. Top way is better- styling is more predicatble-->
+    <ng-include src="'/assets/views/welcome.html'"></ng-include>
+    <!--<div ng-include="'/assets/views/welcome.html'"></div>-->
+
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+</body>
+</html>

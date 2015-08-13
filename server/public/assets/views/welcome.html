@@ -1,0 +1,16 @@
+<div class="container" ng-controller="WelcomeController">
+    <!--<input ng-model="name" placeholder="Enter Your Name">
+    <h2>What's up {{name}}?</h2>-->
+    <div>
+        <h1>{{heading + message}}</h1>
+        <!--// note.message anything entered here will be assoviated with app.js and the key dynamically created-->
+        <input ng-model="note.message" type="text" placeholder="Enter your name, fool!">
+    </div>
+
+    <button ng-click="updateMessage(note)">Update</button>
+
+    <h4>Peeps:</h4>
+    <div class="row">
+        <div class="aName col-md-3 col-sm-12" ng-repeat="item in messages">{{item.message}}</div>
+    </div>
+</div>
